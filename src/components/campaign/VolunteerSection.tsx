@@ -22,8 +22,7 @@ const VolunteerSection = () => {
           <p className="font-tamil text-2xl text-dmk-red">பிரச்சாரத்தில் இணையுங்கள்</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Form */}
+        <div className="max-w-xl mx-auto">
           <div className={`transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {submitted ? (
               <div className="text-center py-16">
