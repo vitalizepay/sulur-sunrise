@@ -84,42 +84,6 @@ const VolunteerSection = () => {
               </form>
             )}
           </div>
-
-          {/* Donation */}
-          <div className={`transition-all duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <div className="p-8 rounded-2xl border border-border bg-muted/30">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-2">Support the Movement</h3>
-              <p className="font-tamil text-dmk-red mb-6">இயக்கத்திற்கு ஆதரவு அளியுங்கள்</p>
-              
-              {/* Progress bar */}
-              <div className="mb-6">
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-muted-foreground">Raised / திரட்டியது</span>
-                  <span className="font-semibold text-foreground">₹12,50,000 / ₹25,00,000</span>
-                </div>
-                <div className="h-4 rounded-full bg-muted overflow-hidden">
-                  <div
-                    className="h-full rounded-full animate-pulse-glow transition-all duration-1000"
-                    style={{ width: "50%", background: "var(--gradient-red)" }}
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-3 gap-3 mb-4">
-                {["₹500", "₹1,000", "₹5,000"].map((amt) => (
-                  <button
-                    key={amt}
-                    className="py-3 rounded-lg border-2 border-dmk-red/30 text-foreground font-bold hover:bg-dmk-red hover:text-primary-foreground transition-all duration-300 text-lg"
-                  >
-                    {amt}
-                  </button>
-                ))}
-              </div>
-              <button className="btn-campaign-gold w-full mt-2">
-                Donate Now / நன்கொடை
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
