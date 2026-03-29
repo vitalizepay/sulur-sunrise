@@ -187,6 +187,10 @@
   .animate-ray-rotate {
     animation: ray-rotate 60s linear infinite;
   }
+  @keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
 }
 
 html {
