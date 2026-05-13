@@ -1,8 +1,21 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Instagram } from "lucide-react";
+import { MessageCircle, Instagram, Facebook } from "lucide-react";
 
 const FloatingButtons = () => (
   <div className="fixed right-4 md:right-6 bottom-6 z-40 flex flex-col gap-3">
+    <motion.a
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ delay: 0.8, type: "spring" }}
+      whileHover={{ scale: 1.1 }}
+      href="https://www.facebook.com/share/17j3JUsxsJ/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Facebook"
+      className="w-14 h-14 rounded-full bg-[#1877F2] text-white flex items-center justify-center shadow-bright"
+    >
+      <Facebook className="w-6 h-6" />
+    </motion.a>
     <motion.a
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
