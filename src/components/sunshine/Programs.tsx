@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import handwritingImg from "@/assets/handwriting.png";
 
 const programs = [
   { emoji: "🍼", title: "Day Care", desc: "Safe, loving care for your little ones throughout the day.", color: "bg-sunshine-pink/20" },
@@ -7,7 +8,7 @@ const programs = [
   { emoji: "🎨", title: "Pre KG", desc: "Creative foundations with colors, sounds and stories.", color: "bg-sunshine-lavender/30" },
   { emoji: "📚", title: "LKG", desc: "Letters, numbers and curiosity-led discovery.", color: "bg-sunshine-peach/30" },
   { emoji: "✏️", title: "UKG", desc: "School-ready skills with confidence and joy.", color: "bg-sunshine-blue/20" },
-  { emoji: "🖊️", title: "Handwriting Classes", desc: "Beautiful penmanship and fine motor skills through fun practice.", color: "bg-sunshine-yellow/30" },
+  { image: handwritingImg, title: "Handwriting Classes", desc: "Beautiful penmanship and fine motor skills through fun practice.", color: "bg-sunshine-yellow/30" },
 ];
 
 const Programs = () => (
@@ -30,8 +31,12 @@ const Programs = () => (
             whileHover={{ y: -8 }}
             className="group relative rounded-3xl bg-white p-8 shadow-card hover:shadow-bright transition-all"
           >
-            <div className={`w-20 h-20 rounded-2xl ${p.color} flex items-center justify-center text-5xl mb-5 group-hover:scale-110 transition-transform`}>
-              {p.emoji}
+            <div className={`w-20 h-20 rounded-2xl ${p.color} flex items-center justify-center text-5xl mb-5 group-hover:scale-110 transition-transform overflow-hidden`}>
+              {p.image ? (
+                <img src={p.image} alt={p.title} className="w-16 h-16 object-contain" loading="lazy" />
+              ) : (
+                p.emoji
+              )}
             </div>
             <h3 className="text-2xl font-bold mb-2">{p.title}</h3>
             <p className="text-muted-foreground">{p.desc}</p>
