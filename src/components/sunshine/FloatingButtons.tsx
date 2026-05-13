@@ -34,7 +34,7 @@ const FloatingButtons = () => (
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.2, type: "spring" }}
       whileHover={{ scale: 1.1 }}
-      href="https://wa.me/917373256444"
+      href="https://wa.me/917871715444"
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp"

@@ -38,9 +38,9 @@ const Footer = () => (
         <div>
           <h4 className="font-bold text-lg mb-4">Contact</h4>
           <ul className="space-y-3 text-white/80 text-sm">
-            <li className="flex gap-2"><Phone className="w-4 h-4 mt-0.5 flex-shrink-0" /> 7373256444 / 7871715444</li>
+            <li className="flex gap-2"><Phone className="w-4 h-4 mt-0.5 flex-shrink-0" /> <span className="font-bold text-white bg-sunshine-yellow/20 px-2 py-0.5 rounded">7871715444 / 7373256444</span></li>
             <li className="flex gap-2"><Mail className="w-4 h-4 mt-0.5 flex-shrink-0" /> Sunshinepreschool26@gmail.com</li>
-            <li className="flex gap-2"><MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" /> Vilankurichi Road, Coimbatore – 641 035</li>
+            <li className="flex gap-2"><MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" /> 2/3 Kumaran Nagar, Vilankuruchi Road, Near KR Supermarket, Coimbatore – 641035</li>
             <li>
               <a href="https://www.instagram.com/sunshinepreschool26" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition">
                 <Instagram className="w-4 h-4" /> Follow Us

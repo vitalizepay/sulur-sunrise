@@ -40,19 +40,15 @@ const Hero = () => {
             <a href="#contact" className="px-6 py-3 rounded-full bg-gradient-sunshine text-foreground font-bold shadow-bright hover:scale-105 transition-transform">
               Book a Visit
             </a>
-            <a href="tel:7373256444" className="px-6 py-3 rounded-full bg-white text-sunshine-blue-deep font-bold shadow-soft hover:scale-105 transition-transform inline-flex items-center gap-2">
-              <Phone className="w-4 h-4" /> Call Now
+            <a href="tel:7871715444" className="px-6 py-3 rounded-full bg-white text-sunshine-blue-deep font-bold shadow-soft hover:scale-105 transition-transform inline-flex items-center gap-2">
+              <Phone className="w-4 h-4" /> <span className="bg-sunshine-yellow/40 px-2 py-0.5 rounded-lg">7871715444</span>
             </a>
-            <a href="https://wa.me/917373256444" target="_blank" rel="noreferrer" className="px-6 py-3 rounded-full bg-[#25D366] text-white font-bold shadow-soft hover:scale-105 transition-transform inline-flex items-center gap-2">
+            <a href="https://wa.me/917871715444" target="_blank" rel="noreferrer" className="px-6 py-3 rounded-full bg-[#25D366] text-white font-bold shadow-soft hover:scale-105 transition-transform inline-flex items-center gap-2">
               <MessageCircle className="w-4 h-4" /> WhatsApp
             </a>
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur shadow-soft">
-              <span className="w-2 h-2 rounded-full bg-sunshine-pink animate-pulse" />
-              <span className="text-sm font-semibold">🎟️ Limited Seats</span>
-            </div>
             <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur shadow-soft">
               <ShieldCheck className="w-4 h-4 text-sunshine-mint" />
               <span className="text-sm font-semibold">Safe Learning Environment</span>
