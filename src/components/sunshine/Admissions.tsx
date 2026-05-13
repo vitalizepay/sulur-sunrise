@@ -17,7 +17,7 @@ const Admissions = () => {
       `🌟 New Admission Inquiry\n\nStudent: ${form.student}\nParent: ${form.parent}\nAge: ${form.age}\nProgram: ${form.program}\nPhone: ${form.phone}\nMessage: ${form.message}`
     );
     setTimeout(() => {
-      window.open(`https://wa.me/917373256444?text=${text}`, "_blank");
+      window.open(`https://wa.me/917871715444?text=${text}`, "_blank");
       toast({ title: "Inquiry Sent! 🎉", description: "We will contact you shortly." });
       setForm({ student: "", parent: "", age: "", program: programs[0], phone: "", message: "" });
       setLoading(false);
@@ -31,7 +31,7 @@ const Admissions = () => {
         <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
           <span className="inline-block px-4 py-1.5 rounded-full bg-sunshine-yellow/30 text-sunshine-blue-deep font-bold text-sm mb-4">Admissions Open</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Enroll Today — <span className="text-gradient-blue">Limited Seats Available</span>
+            Enroll Today — <span className="text-gradient-blue">Admissions Open</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
             Give your child a joyful start. Fill in the form and our admissions team will reach out within 24 hours.

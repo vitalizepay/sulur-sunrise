@@ -11,8 +11,8 @@ const Contact = () => (
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
         {[
-          { icon: Phone, title: "Call Us", lines: ["7373256444", "7871715444"], href: "tel:7373256444", color: "bg-sunshine-blue" },
-          { icon: MessageCircle, title: "WhatsApp", lines: ["Chat with us"], href: "https://wa.me/917373256444", color: "bg-[#25D366]" },
+          { icon: Phone, title: "Call Us", lines: ["7871715444", "7373256444"], href: "tel:7871715444", color: "bg-sunshine-blue" },
+          { icon: MessageCircle, title: "WhatsApp", lines: ["Chat with us"], href: "https://wa.me/917871715444", color: "bg-[#25D366]" },
           { icon: Mail, title: "Email", lines: ["Sunshinepreschool26@gmail.com"], href: "mailto:Sunshinepreschool26@gmail.com", color: "bg-sunshine-pink" },
           { icon: Instagram, title: "Instagram", lines: ["@sunshinepreschool26"], href: "https://www.instagram.com/sunshinepreschool26", color: "bg-gradient-to-br from-sunshine-pink to-sunshine-blue" },
         ].map((c, i) => (
@@ -33,16 +33,22 @@ const Contact = () => (
             </div>
             <h3 className="font-bold text-lg mb-2">{c.title}</h3>
             {c.lines.map((l) => (
-              <p key={l} className="text-muted-foreground text-sm break-all">{l}</p>
+              <p key={l} className={`text-sm break-all ${c.title === "Call Us" ? "font-bold text-sunshine-blue-deep bg-sunshine-yellow/30 px-2 py-0.5 rounded-lg inline-block mt-1" : "text-muted-foreground"}`}>{l}</p>
             ))}
           </motion.a>
         ))}
       </div>
 
       <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white rounded-3xl p-2 shadow-card overflow-hidden">
-        <div className="flex items-center gap-2 px-4 py-3">
-          <MapPin className="w-5 h-5 text-sunshine-blue" />
-          <p className="font-semibold">No.5/3, Kumaran Nagar, Near KB Sweetmart, Vilankurichi Road, Coimbatore – 641 035</p>
+        <div className="flex items-start gap-2 px-4 py-3">
+          <MapPin className="w-5 h-5 text-sunshine-blue mt-0.5 flex-shrink-0" />
+          <p className="font-semibold leading-relaxed">
+            Sunshine Preschool & Academy<br />
+            2/3 Kumaran Nagar<br />
+            Vilankuruchi Road<br />
+            Near KR Supermarket<br />
+            Coimbatore – 641035
+          </p>
         </div>
         <iframe
           src="https://www.google.com/maps?q=Vilankurichi+Road+Coimbatore&output=embed"
