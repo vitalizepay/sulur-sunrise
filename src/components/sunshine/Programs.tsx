@@ -7,6 +7,7 @@ const programs = [
   { emoji: "🎨", title: "Pre KG", desc: "Creative foundations with colors, sounds and stories.", color: "bg-sunshine-lavender/30" },
   { emoji: "📚", title: "LKG", desc: "Letters, numbers and curiosity-led discovery.", color: "bg-sunshine-peach/30" },
   { emoji: "✏️", title: "UKG", desc: "School-ready skills with confidence and joy.", color: "bg-sunshine-blue/20" },
+  { emoji: "🖊️", title: "Handwriting Classes", desc: "Beautiful penmanship and fine motor skills through fun practice.", color: "bg-sunshine-yellow/30" },
 ];
 
 const Programs = () => (

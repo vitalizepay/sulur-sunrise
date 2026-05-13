@@ -10,6 +10,7 @@ const activities = [
   { emoji: "✂️", name: "Art & Craft", color: "bg-sunshine-pink/20" },
   { emoji: "🤸", name: "Fitness", color: "bg-sunshine-blue/20" },
   { emoji: "📖", name: "Tuition", color: "bg-sunshine-yellow/30" },
+  { emoji: "🖊️", name: "Handwriting", color: "bg-sunshine-mint/20" },
 ];
 
 const Activities = () => (
